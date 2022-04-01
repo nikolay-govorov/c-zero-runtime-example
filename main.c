@@ -1,9 +1,9 @@
-int sys_write(int fd, const void *buf, int size);
+#include "calls.h"
 
 static const char dunno[] = "I don't know how to greet you\n";
 static const char hello[] = "Hello, dear "; // Hello, Dear %s
 
-int strlen(const char *s) {
+unsigned int strlen(const char *s) {
   int result = 0;
 
   while(s[result])
